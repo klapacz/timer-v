@@ -31,8 +31,11 @@ fn read_config(path string) ?Config {
 	raw := os.read_file(path) or {
 		return error('Failed to read config file at path "$path": $err')
 	}
+	config := json.decode(Config, raw) or {
+		return error('Failed to parse config file at path "$path": $err')
+	}
 
-	return Config{}
+	return config
 }
 
 fn main() {

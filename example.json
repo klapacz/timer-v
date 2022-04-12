@@ -4,6 +4,10 @@
     {
       "cmd": "date \"+%Y-%m-%d %l:%M:%S %p\"",
       "interval": 1
+    },
+    {
+      "cmd": "date \"+%Y-%m-%d %l:%M:%S %p\"",
+      "interval": 5
     }
   ]
 }

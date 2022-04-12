@@ -1,0 +1,9 @@
+{
+  "separator": " | ",
+  "cmds": [
+    {
+      "cmd": "date \"+%Y-%m-%d %l:%M:%S %p\"",
+      "interval": 1
+    }
+  ]
+}
